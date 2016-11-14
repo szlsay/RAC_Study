@@ -1,0 +1,6 @@
+framework module Pods_RAC_Command {
+  umbrella header "Pods-RAC_Command-umbrella.h"
+
+  export *
+  module * { export * }
+}

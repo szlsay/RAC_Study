@@ -1,0 +1,9 @@
+project 'RAC_OC.xcodeproj'
+use_frameworks!
+target 'RAC_OC' do
+pod 'ReactiveCocoa', '~> 4.0.2-alpha-1'
+end
+
+target 'RAC_Command' do
+pod 'ReactiveCocoa', '~> 4.0.2-alpha-1'
+end

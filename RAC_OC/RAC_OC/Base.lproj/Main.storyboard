@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nrk-aV-Jng">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="Rsq-8F-uJr"/>
+                                    <constraint firstAttribute="height" constant="21" id="WM3-Os-lRL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z9r-iA-sCv">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AKP-Td-DGO"/>
+                                    <constraint firstAttribute="width" constant="97" id="tbX-dd-6di"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nrk-aV-Jng" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="05b-Ca-qxR"/>
+                            <constraint firstItem="Nrk-aV-Jng" firstAttribute="top" secondItem="Z9r-iA-sCv" secondAttribute="bottom" constant="40" id="U1P-b4-uAR"/>
+                            <constraint firstItem="Nrk-aV-Jng" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aOp-vw-Mg2"/>
+                            <constraint firstItem="Z9r-iA-sCv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="auG-nL-bLA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Nrk-aV-Jng" id="Q5z-Pi-JG9"/>
+                        <outlet property="textField" destination="Z9r-iA-sCv" id="Neb-jG-Sea"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
