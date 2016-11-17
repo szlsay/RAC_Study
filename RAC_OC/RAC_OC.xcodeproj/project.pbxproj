@@ -46,6 +46,17 @@
 		709BB3481DD96883006B59A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 709BB3461DD96883006B59A7 /* Main.storyboard */; };
 		709BB34A1DD96883006B59A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 709BB3491DD96883006B59A7 /* Assets.xcassets */; };
 		709BB34D1DD96883006B59A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 709BB34B1DD96883006B59A7 /* LaunchScreen.storyboard */; };
+		70F615991DDD4C9C00F8A67E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F615981DDD4C9C00F8A67E /* main.m */; };
+		70F6159C1DDD4C9C00F8A67E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F6159B1DDD4C9C00F8A67E /* AppDelegate.m */; };
+		70F6159F1DDD4C9C00F8A67E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F6159E1DDD4C9C00F8A67E /* ViewController.m */; };
+		70F615A21DDD4C9C00F8A67E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F615A01DDD4C9C00F8A67E /* Main.storyboard */; };
+		70F615A41DDD4C9C00F8A67E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70F615A31DDD4C9C00F8A67E /* Assets.xcassets */; };
+		70F615A71DDD4C9C00F8A67E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F615A51DDD4C9C00F8A67E /* LaunchScreen.storyboard */; };
+		70F615AE1DDD4D3D00F8A67E /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F615AD1DDD4D3D00F8A67E /* LoginViewModel.m */; };
+		70F615B11DDD4FBE00F8A67E /* RequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F615B01DDD4FBE00F8A67E /* RequestController.m */; };
+		70F615B41DDD4FCD00F8A67E /* RequestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F615B31DDD4FCD00F8A67E /* RequestViewModel.m */; };
+		70F615B71DDD521400F8A67E /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F615B61DDD521400F8A67E /* LoginController.m */; };
+		778F5384860036BA1EDC2511 /* Pods_RAC_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66E83807E262071DC016641 /* Pods_RAC_MVVM.framework */; };
 		92E676094BB8EB6C3EAD55E6 /* Pods_RAC___.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C04C518436CB6789618989 /* Pods_RAC___.framework */; };
 		C34F5CC6FD0C7AF30B2D1BFE /* Pods_RAC___.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C04C518436CB6789618989 /* Pods_RAC___.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +67,7 @@
 		5774C0F9C3F9CC943EADEF96 /* Pods-RAC_映射.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC_映射.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAC_映射/Pods-RAC_映射.release.xcconfig"; sourceTree = "<group>"; };
 		57C04C518436CB6789618989 /* Pods_RAC___.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_RAC___.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		603DD1D75BA0823BC296CAF3 /* Pods_RAC_Command.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RAC_Command.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A94889C0BDF2EAFEADCCF54 /* Pods-RAC_MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC_MVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAC_MVVM/Pods-RAC_MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		705CE4CE1DD96A8F001CBF84 /* RAC_Command.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAC_Command.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		705CE4D11DD96A8F001CBF84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		705CE4D31DD96A8F001CBF84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,10 +130,30 @@
 		709BB3491DD96883006B59A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		709BB34C1DD96883006B59A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		709BB34E1DD96883006B59A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70F615951DDD4C9C00F8A67E /* RAC_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAC_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70F615981DDD4C9C00F8A67E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70F6159A1DDD4C9C00F8A67E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		70F6159B1DDD4C9C00F8A67E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		70F6159D1DDD4C9C00F8A67E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		70F6159E1DDD4C9C00F8A67E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		70F615A11DDD4C9C00F8A67E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70F615A31DDD4C9C00F8A67E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70F615A61DDD4C9C00F8A67E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70F615A81DDD4C9C00F8A67E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70F615AC1DDD4D3D00F8A67E /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		70F615AD1DDD4D3D00F8A67E /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		70F615AF1DDD4FBE00F8A67E /* RequestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestController.h; sourceTree = "<group>"; };
+		70F615B01DDD4FBE00F8A67E /* RequestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestController.m; sourceTree = "<group>"; };
+		70F615B21DDD4FCD00F8A67E /* RequestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestViewModel.h; sourceTree = "<group>"; };
+		70F615B31DDD4FCD00F8A67E /* RequestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestViewModel.m; sourceTree = "<group>"; };
+		70F615B51DDD521400F8A67E /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		70F615B61DDD521400F8A67E /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		71A0A3A9604A436C3D2B14E3 /* Pods_RAC_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RAC_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82B96B7DD6ACEB08D6746175 /* Pods-RAC_映射.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC_映射.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAC_映射/Pods-RAC_映射.debug.xcconfig"; sourceTree = "<group>"; };
 		8BABBE32176547B507A18B52 /* Pods-RAC_OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC_OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAC_OC/Pods-RAC_OC.release.xcconfig"; sourceTree = "<group>"; };
 		B66D697EA19122C4A6FE7E77 /* Pods-RAC_Command.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC_Command.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAC_Command/Pods-RAC_Command.debug.xcconfig"; sourceTree = "<group>"; };
+		B66E83807E262071DC016641 /* Pods_RAC_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RAC_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A8FEF0809C340351E571E7 /* Pods-RAC_MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC_MVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAC_MVVM/Pods-RAC_MVVM.release.xcconfig"; sourceTree = "<group>"; };
 		BB548AFF83AFDC1E6A8DF687 /* Pods-RAC_组合.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC_组合.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAC_组合/Pods-RAC_组合.release.xcconfig"; sourceTree = "<group>"; };
 		DE07C5225C852FC393571811 /* Pods-RAC_过滤.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC_过滤.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAC_过滤/Pods-RAC_过滤.release.xcconfig"; sourceTree = "<group>"; };
 		E4364BD835505EAE5DD1BE79 /* Pods-RAC_OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC_OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAC_OC/Pods-RAC_OC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +201,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70F615921DDD4C9C00F8A67E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				778F5384860036BA1EDC2511 /* Pods_RAC_MVVM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -185,6 +225,8 @@
 				5774C0F9C3F9CC943EADEF96 /* Pods-RAC_映射.release.xcconfig */,
 				5463B5EA9894EA252DA14CEC /* Pods-RAC_组合.debug.xcconfig */,
 				BB548AFF83AFDC1E6A8DF687 /* Pods-RAC_组合.release.xcconfig */,
+				6A94889C0BDF2EAFEADCCF54 /* Pods-RAC_MVVM.debug.xcconfig */,
+				B6A8FEF0809C340351E571E7 /* Pods-RAC_MVVM.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -195,6 +237,7 @@
 				71A0A3A9604A436C3D2B14E3 /* Pods_RAC_OC.framework */,
 				603DD1D75BA0823BC296CAF3 /* Pods_RAC_Command.framework */,
 				57C04C518436CB6789618989 /* Pods_RAC___.framework */,
+				B66E83807E262071DC016641 /* Pods_RAC_MVVM.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -303,6 +346,7 @@
 				705CE4EA1DD992C6001CBF84 /* RAC_过滤 */,
 				705CE5051DD99540001CBF84 /* RAC_映射 */,
 				705CE5201DD99663001CBF84 /* RAC_组合 */,
+				70F615961DDD4C9C00F8A67E /* RAC_MVVM */,
 				709BB33B1DD96883006B59A7 /* Products */,
 				0F3553BC706C261DF8CF0F0F /* Pods */,
 				5B9C4753E2E69D4E220ED815 /* Frameworks */,
@@ -317,6 +361,7 @@
 				705CE4E91DD992C6001CBF84 /* RAC_过滤.app */,
 				705CE5041DD99540001CBF84 /* RAC_映射.app */,
 				705CE51F1DD99663001CBF84 /* RAC_组合.app */,
+				70F615951DDD4C9C00F8A67E /* RAC_MVVM.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -353,6 +398,38 @@
 			isa = PBXGroup;
 			children = (
 				709BB33E1DD96883006B59A7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70F615961DDD4C9C00F8A67E /* RAC_MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				70F6159A1DDD4C9C00F8A67E /* AppDelegate.h */,
+				70F6159B1DDD4C9C00F8A67E /* AppDelegate.m */,
+				70F6159D1DDD4C9C00F8A67E /* ViewController.h */,
+				70F6159E1DDD4C9C00F8A67E /* ViewController.m */,
+				70F615B51DDD521400F8A67E /* LoginController.h */,
+				70F615B61DDD521400F8A67E /* LoginController.m */,
+				70F615AF1DDD4FBE00F8A67E /* RequestController.h */,
+				70F615B01DDD4FBE00F8A67E /* RequestController.m */,
+				70F615B21DDD4FCD00F8A67E /* RequestViewModel.h */,
+				70F615B31DDD4FCD00F8A67E /* RequestViewModel.m */,
+				70F615AC1DDD4D3D00F8A67E /* LoginViewModel.h */,
+				70F615AD1DDD4D3D00F8A67E /* LoginViewModel.m */,
+				70F615A01DDD4C9C00F8A67E /* Main.storyboard */,
+				70F615A31DDD4C9C00F8A67E /* Assets.xcassets */,
+				70F615A51DDD4C9C00F8A67E /* LaunchScreen.storyboard */,
+				70F615A81DDD4C9C00F8A67E /* Info.plist */,
+				70F615971DDD4C9C00F8A67E /* Supporting Files */,
+			);
+			path = RAC_MVVM;
+			sourceTree = "<group>";
+		};
+		70F615971DDD4C9C00F8A67E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70F615981DDD4C9C00F8A67E /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -460,6 +537,26 @@
 			productReference = 709BB33A1DD96883006B59A7 /* RAC_OC.app */;
 			productType = "com.apple.product-type.application";
 		};
+		70F615941DDD4C9C00F8A67E /* RAC_MVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70F615AB1DDD4C9C00F8A67E /* Build configuration list for PBXNativeTarget "RAC_MVVM" */;
+			buildPhases = (
+				35D9CF138DF4B021457B9A1B /* 📦 Check Pods Manifest.lock */,
+				70F615911DDD4C9C00F8A67E /* Sources */,
+				70F615921DDD4C9C00F8A67E /* Frameworks */,
+				70F615931DDD4C9C00F8A67E /* Resources */,
+				128B31AFD9DB6EC12BAA250F /* 📦 Embed Pods Frameworks */,
+				3A00BFAD1D8F7A6B32AAFC1A /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RAC_MVVM;
+			productName = RAC_MVVM;
+			productReference = 70F615951DDD4C9C00F8A67E /* RAC_MVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -494,6 +591,10 @@
 						DevelopmentTeam = Z25J3BA353;
 						ProvisioningStyle = Automatic;
 					};
+					70F615941DDD4C9C00F8A67E = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 709BB3351DD96883006B59A7 /* Build configuration list for PBXProject "RAC_OC" */;
@@ -514,6 +615,7 @@
 				705CE4E81DD992C6001CBF84 /* RAC_过滤 */,
 				705CE5031DD99540001CBF84 /* RAC_映射 */,
 				705CE51E1DD99663001CBF84 /* RAC_组合 */,
+				70F615941DDD4C9C00F8A67E /* RAC_MVVM */,
 			);
 		};
 /* End PBXProject section */
@@ -569,9 +671,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70F615931DDD4C9C00F8A67E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70F615A71DDD4C9C00F8A67E /* LaunchScreen.storyboard in Resources */,
+				70F615A41DDD4C9C00F8A67E /* Assets.xcassets in Resources */,
+				70F615A21DDD4C9C00F8A67E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		128B31AFD9DB6EC12BAA250F /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RAC_MVVM/Pods-RAC_MVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35D9CF138DF4B021457B9A1B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3A00BFAD1D8F7A6B32AAFC1A /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RAC_MVVM/Pods-RAC_MVVM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		40C4D56B32E9FD7CA31E27BD /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -856,6 +1013,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70F615911DDD4C9C00F8A67E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70F615B71DDD521400F8A67E /* LoginController.m in Sources */,
+				70F615AE1DDD4D3D00F8A67E /* LoginViewModel.m in Sources */,
+				70F6159F1DDD4C9C00F8A67E /* ViewController.m in Sources */,
+				70F615B41DDD4FCD00F8A67E /* RequestViewModel.m in Sources */,
+				70F615B11DDD4FBE00F8A67E /* RequestController.m in Sources */,
+				70F6159C1DDD4C9C00F8A67E /* AppDelegate.m in Sources */,
+				70F615991DDD4C9C00F8A67E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -935,6 +1106,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				709BB34C1DD96883006B59A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		70F615A01DDD4C9C00F8A67E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70F615A11DDD4C9C00F8A67E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70F615A51DDD4C9C00F8A67E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70F615A61DDD4C9C00F8A67E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1162,6 +1349,30 @@
 			};
 			name = Release;
 		};
+		70F615A91DDD4C9C00F8A67E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A94889C0BDF2EAFEADCCF54 /* Pods-RAC_MVVM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RAC_MVVM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.st.cn.RAC-MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		70F615AA1DDD4C9C00F8A67E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6A8FEF0809C340351E571E7 /* Pods-RAC_MVVM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RAC_MVVM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.st.cn.RAC-MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1215,6 +1426,15 @@
 			buildConfigurations = (
 				709BB3521DD96883006B59A7 /* Debug */,
 				709BB3531DD96883006B59A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70F615AB1DDD4C9C00F8A67E /* Build configuration list for PBXNativeTarget "RAC_MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70F615A91DDD4C9C00F8A67E /* Debug */,
+				70F615AA1DDD4C9C00F8A67E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
