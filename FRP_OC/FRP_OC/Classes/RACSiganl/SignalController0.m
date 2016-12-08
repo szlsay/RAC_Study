@@ -1,31 +1,45 @@
 //
-//  ViewController.m
-//  RAC_OC
+//  SignalController0.m
+//  FRP_OC
 //
-//  Created by ST on 16/11/14.
+//  Created by ST on 16/12/7.
 //  Copyright © 2016年 ST. All rights reserved.
 //
 
-#import "ViewController.h"
-
+#import "SignalController0.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
-@interface ViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *label;
-@property (weak, nonatomic) IBOutlet UITextField *textField;
-@property (nonatomic, strong) RACSignal *signal;
+@interface SignalController0 ()
+/** 1. */
+@property(nonatomic, strong)UILabel *label;
+/** 2. */
+@property(nonatomic, strong)UITextField *textField;
+
+@property (nonatomic, strong)RACSignal *signal;
 @end
 
-@implementation ViewController
+@implementation SignalController0
 
 #pragma mark - --- 1.init 生命周期 ---
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self test];
+    self.view.backgroundColor = [UIColor whiteColor];
     
-    [self test2];
+    self.label = [[UILabel alloc]initWithFrame:CGRectMake(0, 100, 100, 44)];
+    self.label.textColor = [UIColor blueColor];
+    [self.view addSubview:self.label];
     
+    self.textField = [[UITextField alloc]initWithFrame:CGRectMake(0, 200, 100, 44)];
+    self.textField.textColor = [UIColor blueColor];
+    self.textField.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:self.textField];
+    
+
+//    [self test];
+//    [self test2];
+    
+    [self testAndtest2];
     [self test3];
 }
 
@@ -34,24 +48,16 @@
 #pragma mark - --- 3.event response 事件相应 ---
 
 #pragma mark - --- 4.private methods 私有方法 ---
-
-#pragma mark - --- 5.setters 属性 ---
-
-#pragma mark - --- 6.getters 属性 —--
-
 /**
- *RAC宏
+ * RAC:把一个对象的某个属性绑定一个信号,只要发出信号,就会把信号的内容给对象的属性赋值
+ * 给label的text属性绑定了文本框改变的信号
  */
 - (void)test
 {
-    // RAC:把一个对象的某个属性绑定一个信号,只要发出信号,就会把信号的内容给对象的属性赋值
-    // 给label的text属性绑定了文本框改变的信号
     RAC(self.label, text) = self.textField.rac_textSignal;
-    
-    //        [self.textField.rac_textSignal subscribeNext:^(id text) {
-    //            self.label.text = text;
-    //        }];
-    
+//    [self.textField.rac_textSignal subscribeNext:^(id text) {
+//        self.label.text = text;
+//    }];
 }
 
 /**
@@ -63,14 +69,17 @@
     [RACObserve(self.view, center) subscribeNext:^(id x) {
         NSLog(@"%@", x);
     }];
+    
+    [RACObserve(self, view) subscribeNext:^(id x) {
+         NSLog(@"%s %@", __FUNCTION__, x);
+    }];
 }
 
 - (void)testAndtest2 // textField输入的值赋值给label，监听label文字改变,
 {
-    
     RAC(self.label, text) = self.textField.rac_textSignal;
     [RACObserve(self.label, text) subscribeNext:^(id x) {
-        NSLog(@"====label的文字变了");
+        NSLog(@"%s ====label的文字变了 %@", __FUNCTION__, x);
     }];
     
 }
@@ -102,5 +111,10 @@
     NSLog(@"%@ %@ %@", num1, num2, num3);
     
 }
+#pragma mark - --- 5.setters 属性 ---
+
+#pragma mark - --- 6.getters 属性 —--
+
+
 @end
 
