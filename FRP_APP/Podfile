@@ -1,0 +1,18 @@
+project 'FRP_APP.xcodeproj'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, "8.0"
+
+inhibit_all_warnings!
+
+target "FRP_APP" do
+
+pod 'ReactiveCocoa'
+pod 'ReactiveViewModel', tag: '0.1.2', git: 'https://github.com/ashfurrow/ReactiveViewModel.git'
+pod '500px-iOS-api', '~> 1.0.5'
+pod 'SVProgressHUD', '~> 2.0.4'
+pod 'AFImageDownloader', '~> 1.1.0'
+pod 'libextobjc', '~> 0.4.1'
+
+end
