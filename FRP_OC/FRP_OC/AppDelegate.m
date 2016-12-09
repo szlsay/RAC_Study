@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TableViewController.h"
+#import "TableView0Controller.h"
 @interface AppDelegate ()
 
 @end
@@ -18,9 +19,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    
     UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:[TableViewController new]];
-    self.window.rootViewController = navVC;
+    navVC.tabBarItem = [[UITabBarItem alloc]initWithTabBarSystemItem:UITabBarSystemItemMore tag:0];
+    UINavigationController *navVC0 = [[UINavigationController alloc]initWithRootViewController:[TableView0Controller new]];
+    navVC0.tabBarItem = [[UITabBarItem alloc]initWithTabBarSystemItem:UITabBarSystemItemSearch tag:1];
+    UITabBarController *tabbarVC = [[UITabBarController alloc]init];
+    tabbarVC.viewControllers = @[navVC, navVC0];
+    self.window.rootViewController = tabbarVC;
     [self.window makeKeyAndVisible];
     return YES;
 }

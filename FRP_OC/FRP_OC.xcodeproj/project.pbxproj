@@ -12,10 +12,15 @@
 		7021C00B1DF7AA73007DCD32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7021C00A1DF7AA73007DCD32 /* AppDelegate.m */; };
 		7021C0131DF7AA73007DCD32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7021C0121DF7AA73007DCD32 /* Assets.xcassets */; };
 		7021C0161DF7AA73007DCD32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7021C0141DF7AA73007DCD32 /* LaunchScreen.storyboard */; };
+		70A48CFB1DF94CA200CC311B /* RACSignalSubscriptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A48CFA1DF94CA200CC311B /* RACSignalSubscriptionController.m */; };
+		70A48CFF1DF9509C00CC311B /* RACColdHot0Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A48CFE1DF9509C00CC311B /* RACColdHot0Controller.m */; };
+		70A48D021DF9517A00CC311B /* TableView0Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A48D011DF9517A00CC311B /* TableView0Controller.m */; };
 		70C3AC941DF7F9AA0011BA19 /* SignalController0.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C3AC921DF7F9AA0011BA19 /* SignalController0.m */; };
 		70C3AC971DF7FA5C0011BA19 /* SignalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C3AC961DF7FA5C0011BA19 /* SignalController.m */; };
 		70C3AC9C1DF80EC80011BA19 /* RACSubjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C3AC9B1DF80EC80011BA19 /* RACSubjectController.m */; };
 		70C3AC9F1DF811480011BA19 /* RACSubjectTwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C3AC9E1DF811480011BA19 /* RACSubjectTwoController.m */; };
+		70E03EE91DFA40670044C4F6 /* RACColdHot2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E03EE81DFA40670044C4F6 /* RACColdHot2Controller.m */; };
+		70E03EED1DFA48110044C4F6 /* RACColdHot3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E03EEC1DFA48110044C4F6 /* RACColdHot3Controller.m */; };
 		70E47E551DF8F217001E6A77 /* RACReplaySubjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E47E541DF8F217001E6A77 /* RACReplaySubjectController.m */; };
 		70E47E591DF8F3BC001E6A77 /* RACSequenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E47E581DF8F3BC001E6A77 /* RACSequenceController.m */; };
 		70E47E5B1DF8F3C9001E6A77 /* flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70E47E5A1DF8F3C9001E6A77 /* flags.plist */; };
@@ -35,6 +40,12 @@
 		7021C0121DF7AA73007DCD32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7021C0151DF7AA73007DCD32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7021C0171DF7AA73007DCD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70A48CF91DF94CA200CC311B /* RACSignalSubscriptionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSignalSubscriptionController.h; sourceTree = "<group>"; };
+		70A48CFA1DF94CA200CC311B /* RACSignalSubscriptionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSignalSubscriptionController.m; sourceTree = "<group>"; };
+		70A48CFD1DF9509C00CC311B /* RACColdHot0Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACColdHot0Controller.h; sourceTree = "<group>"; };
+		70A48CFE1DF9509C00CC311B /* RACColdHot0Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACColdHot0Controller.m; sourceTree = "<group>"; };
+		70A48D001DF9517A00CC311B /* TableView0Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableView0Controller.h; sourceTree = "<group>"; };
+		70A48D011DF9517A00CC311B /* TableView0Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableView0Controller.m; sourceTree = "<group>"; };
 		70C3AC921DF7F9AA0011BA19 /* SignalController0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalController0.m; sourceTree = "<group>"; };
 		70C3AC931DF7F9AA0011BA19 /* SignalController0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalController0.h; sourceTree = "<group>"; };
 		70C3AC951DF7FA5C0011BA19 /* SignalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalController.h; sourceTree = "<group>"; };
@@ -43,6 +54,10 @@
 		70C3AC9B1DF80EC80011BA19 /* RACSubjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSubjectController.m; sourceTree = "<group>"; };
 		70C3AC9D1DF811480011BA19 /* RACSubjectTwoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSubjectTwoController.h; sourceTree = "<group>"; };
 		70C3AC9E1DF811480011BA19 /* RACSubjectTwoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSubjectTwoController.m; sourceTree = "<group>"; };
+		70E03EE71DFA40670044C4F6 /* RACColdHot2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACColdHot2Controller.h; sourceTree = "<group>"; };
+		70E03EE81DFA40670044C4F6 /* RACColdHot2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACColdHot2Controller.m; sourceTree = "<group>"; };
+		70E03EEB1DFA48110044C4F6 /* RACColdHot3Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACColdHot3Controller.h; sourceTree = "<group>"; };
+		70E03EEC1DFA48110044C4F6 /* RACColdHot3Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACColdHot3Controller.m; sourceTree = "<group>"; };
 		70E47E531DF8F217001E6A77 /* RACReplaySubjectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACReplaySubjectController.h; sourceTree = "<group>"; };
 		70E47E541DF8F217001E6A77 /* RACReplaySubjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACReplaySubjectController.m; sourceTree = "<group>"; };
 		70E47E571DF8F3BC001E6A77 /* RACSequenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSequenceController.h; sourceTree = "<group>"; };
@@ -112,6 +127,7 @@
 		7021C0051DF7AA73007DCD32 /* FRP_OC */ = {
 			isa = PBXGroup;
 			children = (
+				70A48CF61DF9495F00CC311B /* 美团点评技术 */,
 				70C3AC901DF7F9350011BA19 /* Classes */,
 				7021C0061DF7AA73007DCD32 /* Supporting Files */,
 			);
@@ -125,12 +141,43 @@
 				7021C00A1DF7AA73007DCD32 /* AppDelegate.m */,
 				70E47E5C1DF8F6D7001E6A77 /* TableViewController.h */,
 				70E47E5D1DF8F6D7001E6A77 /* TableViewController.m */,
+				70A48D001DF9517A00CC311B /* TableView0Controller.h */,
+				70A48D011DF9517A00CC311B /* TableView0Controller.m */,
 				7021C0121DF7AA73007DCD32 /* Assets.xcassets */,
 				7021C0141DF7AA73007DCD32 /* LaunchScreen.storyboard */,
 				7021C0171DF7AA73007DCD32 /* Info.plist */,
 				7021C0071DF7AA73007DCD32 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70A48CF61DF9495F00CC311B /* 美团点评技术 */ = {
+			isa = PBXGroup;
+			children = (
+				70E03EEA1DFA47E20044C4F6 /* 细说ReactiveCocoa的冷信号与热信号（三） */,
+				70E03EE61DFA401E0044C4F6 /* 细说ReactiveCocoa的冷信号与热信号（二） */,
+				70A48CFC1DF9506C00CC311B /* 细说ReactiveCocoa的冷信号与热信号（一） */,
+				70A48CF71DF9497800CC311B /* RACSignal的Subscription深入分析 */,
+			);
+			path = "美团点评技术";
+			sourceTree = "<group>";
+		};
+		70A48CF71DF9497800CC311B /* RACSignal的Subscription深入分析 */ = {
+			isa = PBXGroup;
+			children = (
+				70A48CF91DF94CA200CC311B /* RACSignalSubscriptionController.h */,
+				70A48CFA1DF94CA200CC311B /* RACSignalSubscriptionController.m */,
+			);
+			path = "RACSignal的Subscription深入分析";
+			sourceTree = "<group>";
+		};
+		70A48CFC1DF9506C00CC311B /* 细说ReactiveCocoa的冷信号与热信号（一） */ = {
+			isa = PBXGroup;
+			children = (
+				70A48CFD1DF9509C00CC311B /* RACColdHot0Controller.h */,
+				70A48CFE1DF9509C00CC311B /* RACColdHot0Controller.m */,
+			);
+			path = "细说ReactiveCocoa的冷信号与热信号（一）";
 			sourceTree = "<group>";
 		};
 		70C3AC901DF7F9350011BA19 /* Classes */ = {
@@ -168,6 +215,24 @@
 				70C3AC9E1DF811480011BA19 /* RACSubjectTwoController.m */,
 			);
 			path = RACSubject;
+			sourceTree = "<group>";
+		};
+		70E03EE61DFA401E0044C4F6 /* 细说ReactiveCocoa的冷信号与热信号（二） */ = {
+			isa = PBXGroup;
+			children = (
+				70E03EE71DFA40670044C4F6 /* RACColdHot2Controller.h */,
+				70E03EE81DFA40670044C4F6 /* RACColdHot2Controller.m */,
+			);
+			path = "细说ReactiveCocoa的冷信号与热信号（二）";
+			sourceTree = "<group>";
+		};
+		70E03EEA1DFA47E20044C4F6 /* 细说ReactiveCocoa的冷信号与热信号（三） */ = {
+			isa = PBXGroup;
+			children = (
+				70E03EEB1DFA48110044C4F6 /* RACColdHot3Controller.h */,
+				70E03EEC1DFA48110044C4F6 /* RACColdHot3Controller.m */,
+			);
+			path = "细说ReactiveCocoa的冷信号与热信号（三）";
 			sourceTree = "<group>";
 		};
 		70E47E521DF8F201001E6A77 /* RACReplaySubject */ = {
@@ -349,12 +414,17 @@
 			files = (
 				70C3AC9C1DF80EC80011BA19 /* RACSubjectController.m in Sources */,
 				70E47E6E1DF90666001E6A77 /* RACMulticastConnectionController.m in Sources */,
+				70A48CFF1DF9509C00CC311B /* RACColdHot0Controller.m in Sources */,
 				70C3AC941DF7F9AA0011BA19 /* SignalController0.m in Sources */,
+				70E03EE91DFA40670044C4F6 /* RACColdHot2Controller.m in Sources */,
 				70C3AC9F1DF811480011BA19 /* RACSubjectTwoController.m in Sources */,
 				7021C00B1DF7AA73007DCD32 /* AppDelegate.m in Sources */,
+				70A48CFB1DF94CA200CC311B /* RACSignalSubscriptionController.m in Sources */,
 				70E47E5E1DF8F6D7001E6A77 /* TableViewController.m in Sources */,
+				70A48D021DF9517A00CC311B /* TableView0Controller.m in Sources */,
 				7021C0081DF7AA73007DCD32 /* main.m in Sources */,
 				70E47E761DF9365B001E6A77 /* RACMacroController.m in Sources */,
+				70E03EED1DFA48110044C4F6 /* RACColdHot3Controller.m in Sources */,
 				70E47E591DF8F3BC001E6A77 /* RACSequenceController.m in Sources */,
 				70E47E551DF8F217001E6A77 /* RACReplaySubjectController.m in Sources */,
 				70E47E651DF8F991001E6A77 /* RACCommandController.m in Sources */,

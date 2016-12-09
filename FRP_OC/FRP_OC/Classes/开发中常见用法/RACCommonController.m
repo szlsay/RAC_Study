@@ -61,7 +61,7 @@
 @end
 
 
-@interface RACCommonController ()
+@interface RACCommonController ()<UIAlertViewDelegate>
 @property (strong, nonatomic) UIButton *button;
 
 @property (nonatomic, assign) int age;
@@ -133,8 +133,12 @@
 {
     // 5.监听文本框文字改变
     // 获取文本框文字改变的信号
-    [_textField.rac_textSignal subscribeNext:^(id x) {
+    [self.textField.rac_textSignal subscribeNext:^(id x) {
         NSLog(@"%@",x);
+    }];
+    
+    [[self.textField rac_signalForControlEvents:UIControlEventEditingChanged] subscribeNext:^(id x){
+        NSLog(@"change");
     }];
 }
 
@@ -144,6 +148,12 @@
     // 只要发出这个通知,又会转换成一个信号
     [[[NSNotificationCenter defaultCenter] rac_addObserverForName:UIKeyboardWillShowNotification object:nil] subscribeNext:^(id x) {
         NSLog(@"弹出键盘");
+    }];
+    
+    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:@"postData" object:nil] subscribeNext:^(NSNotification *notification) {
+        NSLog(@"%@", notification.name);
+        NSLog(@"%@", notification.object);
+         NSLog(@"%s %@", __FUNCTION__, notification.userInfo);
     }];
 }
 
@@ -155,7 +165,15 @@
         
         NSLog(@"点击了按钮");
         
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"postData" object:self userInfo:@{@"name":@"ios"}];
+        
     }];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] init];
+    [[tap rac_gestureSignal] subscribeNext:^(id x) {
+        NSLog(@"tap");
+    }];
+    [self.view addGestureRecognizer:tap];
 }
 
 - (void)KVO
@@ -193,6 +211,21 @@
     [[_redView rac_signalForSelector:@selector(changeColor:)] subscribeNext:^(id x) {
         NSLog(@"控制器知道颜色 %s %@", __FUNCTION__, x);
     }];
+    
+    
+    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Title" message:@"message" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+    [alertView show];
+    
+    [[self rac_signalForSelector:@selector(alertView:clickedButtonAtIndex:) fromProtocol:@protocol(UIAlertViewDelegate)] subscribeNext:^(RACTuple *tuple) {
+        NSLog(@"%@",tuple.first);
+        NSLog(@"%@",tuple.second);
+        NSLog(@"%@",tuple.third);
+    }];
+    
+    [[alertView rac_buttonClickedSignal] subscribeNext:^(id x) {
+        NSLog(@"%@",x);
+    }];
+    
 }
 #pragma mark - --- 4.private methods 私有方法 ---
 
